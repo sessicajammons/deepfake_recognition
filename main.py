@@ -1,3 +1,8 @@
+# This code was produced with the help of Shradhdha Bhalodia's code
+# at https://www.kaggle.com/code/praveenraj001/deep-fake-image-classification-using-cnn
+# The dataset used in this code is provided on the Kaggle website: 
+# https://www.kaggle.com/datasets/saurabhbagchi/deepfake-image-detection/data
+
 # Import Modules
 import os,glob
 import numpy as np
