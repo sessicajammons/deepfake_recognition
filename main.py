@@ -177,7 +177,9 @@ def raw_predict(model, test_img_path):
 
 # Main execution
 # Set dataset path (update based on environment)
-dataset_path = "/kaggle/input/deepfake-image-detection/test-20250112T065939Z-001/test"  # Kaggle path
+# Download latest version
+dataset_path = kagglehub.dataset_download("saurabhbagchi/deepfake-image-detection")
+print("Path to dataset files:", dataset_path)
 # If running locally, update to where the dataset is extracted, e.g.:
 # dataset_path = "./new_dataset/test"
 
