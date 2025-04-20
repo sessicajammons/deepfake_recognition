@@ -1,6 +1,6 @@
 # This code was adapted with the help of Shradhdha Bhalodia's code
 # at https://www.kaggle.com/code/praveenraj001/deep-fake-image-classification-using-cnn
-# The dataset used in this code is provided on the Kaggle website: 
+# The dataset used in this code is provided on the Kaggle website:
 # https://www.kaggle.com/datasets/saurabhbagchi/deepfake-image-detection/data
 
 # Import Modules
@@ -177,11 +177,7 @@ def raw_predict(model, test_img_path):
 
 # Main execution
 # Set dataset path (update based on environment)
-# Download latest version
-dataset_path = kagglehub.dataset_download("saurabhbagchi/deepfake-image-detection")
-print("Path to dataset files:", dataset_path)
-# If running locally, update to where the dataset is extracted, e.g.:
-# dataset_path = "./new_dataset/test"
+dataset_path = "/kaggle/input/deepfake-image-detection/test-20250112T065939Z-001/test"  # Kaggle path
 
 img_paths, categories = load_data(dataset_path)
 model = CNN_learning(img_paths, categories)
@@ -189,4 +185,3 @@ model = CNN_learning(img_paths, categories)
 # Example test image path (update to a valid image from your dataset)
 test_img_path = "/kaggle/input/deepfake-image-detection/test-20250112T065939Z-001/test/fake/123.jpg"
 raw_predict(model, test_img_path)
-
