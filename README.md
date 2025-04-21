@@ -10,10 +10,8 @@ References
 [3] University Of Virginia “What the heck is a deepfake?” https://security.virginia.edu/deepfakes [Accessed 2025]
 
 Instructions
-1. Download the main.py file.
-2. Open the file using Google Colab ipynb. 
-3. Upload photos (real and fake) to the Google Colab local ipynb path. 
-4. Run the main.py file.
-5. When prompted, copy an uploaded photo path from the local ipynb path and paste the path into the prompt.
-6. Press enter to allow the model to predict whether the photo is real or fake.
-7. Once the user has no more photos to test, enter 'exit' into the photo upload prompt. 
+1. Download the deepfake_recognition Project.ipynb file.
+2. Open the file using Google Colab ipynb.
+3. Download the dataset found at https://www.kaggle.com/datasets/saurabhbagchi/deepfake-image-detection/data
+4. Upload the dataset to the Google Colab local ipynb path. 
+5. Run the ipynb. 
